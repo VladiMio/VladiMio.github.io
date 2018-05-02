@@ -14,6 +14,7 @@ Scheme是大名鼎鼎的Lisp的一种方言，一种 funct"><meta name="keywords
 </ul>
 <p>千里之行始于足下，我们先从最简单的Lispy计算器开始，逐步添加内容，最终实现一个功能相对完整的Scheme解释器</p>
 <h3 id="0x0000-Lispy计算器"><a href="#0x0000-Lispy计算器" class="headerlink" title="0x0000 Lispy计算器"></a>0x0000 Lispy计算器</h3><p>Lispy计算器可以被认为是一个使用Lisp语法的普通计算器，实现了以下5种语法形式：</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -44,6 +45,7 @@ Scheme是大名鼎鼎的Lisp的一种方言，一种 funct"><meta name="keywords
 </tr>
 </tbody>
 </table>
+</div>
 <p>基本上就是Scheme的一个子集。</p>
 <h4 id="词法分析及语法分析"><a href="#词法分析及语法分析" class="headerlink" title="词法分析及语法分析"></a>词法分析及语法分析</h4><p>解释器解释代码的过程，本身就是按照既定的语法规则，将输入的代码存储在一种称为“抽象语法树”的数据结构中，并遍历的过程。这里我们使用List来储存这棵树。因此一开始要做的事就很明确了：</p>
 <p>1.词法分析: 将输入的字符串转变成一系列的token。</p>
