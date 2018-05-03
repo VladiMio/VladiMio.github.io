@@ -9,7 +9,8 @@
 <p><strong>(x<sup>(i)</sup>, y<sup>(i)</sup>)</strong> = the No.i training example</p>
 <h3 id="hypothesis-假设函数">Hypothesis (假设函数)</h3>
 <p>一个机器学习算法运行的方式如下图所示</p>
-<p><img src="http://ogptt11t8.bkt.clouddn.com/MLWeek01-001.png"> 其中函数</p>
+<p><img src="http://ogptt11t8.bkt.clouddn.com/MLWeek01-001.png"></p>
+<p>其中函数</p>
 <p><span class="math display">\[ h_\theta(x) = \theta_0 + \theta_1x \]</span></p>
 <p>称为 <strong>hypothesis (假设函数)</strong></p>
 <p><em>以上函数h(x)仅针对线性情况</em></p>
@@ -18,7 +19,7 @@
 <p><span class="math display">\[ h_\theta(x) = \theta_0 + \theta_1x \]</span></p>
 <p>如何选择 <span class="math inline">\(\theta_0\)</span> 和 <span class="math inline">\(\theta_1\)</span> 可以使 <span class="math inline">\(h_\theta(x)\)</span> 更好地拟合训练数据集呢？一般认为，当通过 <span class="math inline">\(h_\theta(x)\)</span> 得出的预测值与训练数据集中的样本值方差最小时，<span class="math inline">\(\theta_0\)</span> 和 <span class="math inline">\(\theta_1\)</span> 取得最优值，即函数</p>
 <p><span class="math display">\[ J(\theta_0, \theta_1) = \frac{1}{2m}\sum_{i=1}^m(h_\theta(x_i)-y_i)^2 \]</span></p>
-<p>取得最小值时，<span class="math inline">\(\theta_0\)</span> 和 <span class="math inline">\(\theta_1\)</span> 取得最优值。</p>
+<p>取得最小值时，<span class="math inline">\(\theta_0\)</span> 和 <span class="math inline">\(\theta_1\)</span> 取得最优值。<span class="math inline">\(J(\theta_0,\theta_1)\)</span> 被称作 <strong>Cost Function (代价函数)</strong></p>
 </div><div class="post-footer"><div class="meta"><div class="info"><i class="fa fa-sun-o"></i><span class="date">2018-05-03</span><i class="fa fa-comment-o"></i><a href="/2018/05/03/ML-Week01/#comments">评论</a><i class="fa fa-tag"></i><a href="/categories/Machine-learning/" title="Machine-learning" class="tag">Machine-learning </a><a href="/tags/学习笔记/" title="学习笔记" class="tag">学习笔记 </a></div></div></div></div><div class="share"><div class="evernote"><a href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title);}})();" ref="nofollow" target="_blank" class="fa fa-bookmark"></a></div><div class="weibo"><a href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));" class="fa fa-weibo"></a></div><div class="twitter"><a href="http://twitter.com/home?status=,http://VladiMio.github.io/2018/05/03/ML-Week01/,简单易懂的现代魔法,机器学习笔记 01,;" class="fa fa-twitter"></a></div></div><div class="pagination"><ul class="clearfix"><li class="next pagbuttons"><a role="navigation" href="/2018/03/05/OpenGL_VAO&amp;VBO/" title="OpenGL - VAO &amp; VBO" class="btn">下一篇</a></li></ul></div><a id="comments"></a><div id="disqus_thread"></div><script>var disqus_shortname = 'vladimio-me';
 var disqus_identifier = '2018/05/03/ML-Week01/';
 var disqus_title = '机器学习笔记 01';
